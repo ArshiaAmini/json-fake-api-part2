@@ -1,13 +1,27 @@
 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 button{
-  height: 30px;
-  width: 100px;
-  border:.5px solid black;
+  height: 40px;
+  width: 33.33%;
   border-radius: .6rem;
-  margin-left: 2px;
   cursor: pointer;
   font-weight: bold;
   
+  
+}
+body{
+  min-height: 100vh;
+
+}
+
+form{
+  width: 100%;
 }
 button:hover
 {
@@ -16,4 +30,10 @@ button:hover
 button:focus
 {
   background-color: darkblue;
+  color:white;
+}
+ul{
+
+  margin-top: 20px;
+
 }
