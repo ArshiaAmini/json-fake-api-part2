@@ -1,14 +1,15 @@
 import React from 'react'
 
-const ListItem = ({ contents, setContents }) => {
+const ListItem = ({ contents, errMsg }) => {
   
   return (
-    <ul>
+    <ul >
+      <p>{errMsg}</p>
       {contents.map((content) => (
-        <li key={content.id}>
+        
+        <li key={content.id} >
           {JSON.stringify(content)}
         </li>
-        
       ))}
       
 
