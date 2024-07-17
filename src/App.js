@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Form from "./Form";
 import ListItem from "./ListItem";
+import Table from "./Table";
 
 function App() {
 
@@ -40,12 +41,11 @@ function App() {
       <Form
         typeRequest={typeRequest}
         setTypeRequest={setTypeRequest} /> 
-      <ListItem
-        errMsg={errMsg}
-        contents={contents}
+      
+    {/* <ListItem  errMsg={errMsg} contents={contents}
       />
-      
-      
+       */}
+      <Table contents={contents} />
     </div>
   );
 }

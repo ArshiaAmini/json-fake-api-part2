@@ -5,8 +5,12 @@ const Form = ({ typeRequest, setTypeRequest }) => {
   
   return (
     <form
-      onSubmit={(e) => e.preventDefault()}   
+      onSubmit={(e) => e.preventDefault()}   //this method is used to prevent the default behavior of a specified event from occuring. like refreshing
     >
+      {/* 
+      the Button components receives props of typeRequest, setTypeRequest and buttonName 
+      
+      */}
       <Button
         buttonName ="users"
         typeRequest={typeRequest}

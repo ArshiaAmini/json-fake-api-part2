@@ -14,6 +14,7 @@ button{
   font-weight: bold;
   
   
+  
 }
 body{
   min-height: 100vh;
@@ -22,6 +23,7 @@ body{
 
 form{
   width: 100%;
+  position: fixed;
 }
 button:hover
 {
@@ -34,6 +36,6 @@ button:focus
 }
 ul{
 
-  margin-top: 20px;
+  padding: 3rem 2 rem 1rem;
 
 }

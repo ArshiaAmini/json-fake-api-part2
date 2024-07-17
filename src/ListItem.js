@@ -1,4 +1,5 @@
 import React from 'react'
+import List from './List'
 
 const ListItem = ({ contents, errMsg }) => {
   
@@ -6,10 +7,12 @@ const ListItem = ({ contents, errMsg }) => {
     <ul >
       <p>{errMsg}</p>
       {contents.map((content) => (
+        <List
+          key={content.id}
+          contents={contents}
+        />
         
-        <li key={content.id} >
-          {JSON.stringify(content)}
-        </li>
+       
       ))}
       
 
