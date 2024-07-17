@@ -39,3 +39,6 @@ ul{
   padding: 3rem 2 rem 1rem;
 
 }
+td{
+  border:  1px solid black;
+}
